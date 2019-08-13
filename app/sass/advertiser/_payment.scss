@@ -1,0 +1,354 @@
+.payment {
+  padding-top: rem(140);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: rem(112);
+  }
+
+  &-navbar {
+    .navbar__left {
+      @include media-breakpoint-down(sm) {
+        width: auto;
+      }
+    }
+  }
+
+  &-cancel {
+    color: $white;
+  }
+
+  h4 {
+    width: 100%;
+    text-align: center;
+
+    & + p {
+      margin-bottom: rem(50);
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &-choice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+      margin-bottom: rem(16);
+    }
+    label {
+      width: 100%;
+      margin-bottom: rem(8);
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border: rem(3) solid $geyser;
+      padding: rem(23) rem(20) rem(25) rem(50);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    input[type='radio'] {
+      display: none;
+
+      &:checked {
+        & + div::before {
+          opacity: 1;
+        }
+      }
+
+      & + div {
+        width: rem(22);
+        height: rem(22);
+        border-radius: 50%;
+        border: rem(2) solid $indigo;
+        position: absolute;
+        top: rem(20);
+        left: rem(20);
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: rem(8);
+          height: rem(8);
+          border-radius: 50%;
+          background-color: $indigo;
+          transition: all 0.3s ease;
+          opacity: 0;
+        }
+      }
+
+      & + div + div {
+        color: $indigo;
+        font-size: rem(16);
+        font-weight: bold;
+        line-height: rem(16);
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &-revers {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-total {
+    width: 100%;
+    overflow: hidden;
+    background-color: $white;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: rem(20);
+    }
+
+    &-top {
+      font-weight: bold;
+      padding: rem(25) rem(32);
+      border: rem(3) solid $geyser;
+      border-bottom: 0;
+      color: $indigo;
+
+      @include media-breakpoint-down(sm) {
+        padding: rem(16) rem(24);
+      }
+
+      h6 {
+        margin: 0;
+      }
+    }
+
+    &-bottom {
+      padding: rem(30) rem(30) rem(40);
+      border: rem(3) solid $geyser;
+      border-top: 0;
+      border-bottom: 0;
+      position: relative;
+      z-index: 1;
+
+      @include media-breakpoint-down(sm) {
+        padding: rem(22) rem(22) rem(30);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      h6 {
+        font-weight: 500;
+        color: $blue;
+        margin-bottom: rem(16);
+
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 0;
+          line-height: rem(40);
+        }
+      }
+
+      p {
+        font-weight: 600;
+        color: $indigo;
+        font-size: rem(36);
+        line-height: rem(40);
+      }
+    }
+
+    &-divider {
+      border-top: rem(1.5) dashed $heather;
+      position: relative;
+      width: 100%;
+      z-index: 2;
+
+      &::before,
+      &::after {
+        content: '';
+        background-color: $white;
+        border: rem(3) solid $geyser;
+        border-radius: 50%;
+        position: absolute;
+        width: rem(19);
+        height: rem(19);
+        top: 50%;
+      }
+
+      &::before {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+
+      &::after {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+    }
+
+    &-angles {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(25%);
+      width: 100%;
+      height: rem(16);
+      background-image: url(../img/icons/progressive-disclosure-line@2x.png);
+      background-position: 0;
+      background-repeat: repeat-x;
+      background-size: rem(53.3);
+    }
+  }
+
+  &-window {
+    border: rem(3) solid $geyser;
+    padding-bottom: rem(48);
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: rem(40);
+    }
+
+    &-head {
+      border-bottom: rem(1) solid $geyser;
+      padding: rem(25) rem(56) rem(23) rem(35);
+
+      @include media-breakpoint-down(sm) {
+        padding: rem(24);
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        .zmdi {
+          color: $indigo;
+          font-size: rem(24);
+          margin-right: rem(15);
+        }
+
+        h6 {
+          margin-bottom: 0;
+          line-height: rem(16);
+        }
+      }
+    }
+
+    &-body {
+      padding: rem(32) rem(56) 0;
+
+      @include media-breakpoint-down(sm) {
+        padding: rem(24) rem(24) 0;
+      }
+
+      &.inactive {
+        user-select: none;
+        pointer-events: none;
+        opacity: 0.6;
+      }
+
+      h6 {
+        font-weight: 500;
+        color: $blue;
+        margin-bottom: rem(16);
+      }
+
+      p {
+        font-weight: 600;
+        font-size: rem(36);
+        line-height: rem(40);
+        color: $indigo;
+        position: relative;
+
+        span {
+          font-weight: 500;
+          color: $blue;
+          font-size: rem(16);
+          line-height: rem(24);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translateY(100%);
+
+          @include media-breakpoint-down(sm) {
+            white-space: nowrap;
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+
+      &__top {
+        h6 {
+          padding-bottom: rem(10);
+          margin-bottom: rem(25);
+          border-bottom: rem(1) solid $geyser;
+        }
+      }
+
+      .bootstrap-select {
+        width: 100% !important;
+      }
+    }
+
+    &-col {
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+
+    .dropdown {
+      @include media-breakpoint-down(sm) {
+        margin-bottom: rem(24);
+      }
+    }
+
+    &__btn {
+      margin-top: rem(55);
+      width: 100%;
+    }
+
+    &__balance-btn {
+      width: 100%;
+      margin-top: rem(32);
+    }
+
+    &__form-group {
+      position: relative;
+
+      .form-control {
+        padding-right: rem(60);
+      }
+
+      span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: rem(50);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-left: rem(1) solid $indigo;
+        color: $indigo;
+        font-size: rem(16);
+        font-weight: 500;
+      }
+    }
+  }
+  &__form-control-textarea {
+    height: rem(177) !important; 
+    resize: none;
+  }
+}

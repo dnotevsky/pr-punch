@@ -1,0 +1,234 @@
+.page-head {
+	background-color: $indigo;
+	padding-bottom: rem(40);
+	min-height: rem(200);
+	display: flex;
+	justify-content: flex-end;
+	flex-flow: column;
+	padding-top: rem(140);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: rem(112);
+	}
+
+	.row {
+		& > div {
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-end;
+			align-items: flex-start;
+		}
+	}
+
+	
+	&__title-wrap {
+		position: relative;
+		top: rem(8);
+		width: 100%;
+		cursor: default;
+
+		@include media-breakpoint-down(sm) {
+			top: 0;
+			margin-top: rem(16);
+			margin-bottom: rem(24);
+		}	
+
+		&.edit {
+			cursor: pointer;
+
+			i {
+				display: inline-block;
+			}
+
+			h2 {
+				cursor: pointer;
+			}
+
+			&.hide {
+				display: none;
+			}
+
+			textarea {
+				display: block;
+			}
+		}
+
+		h2, textarea {
+			color: #fff;
+			font-size: rem(48);
+			line-height: rem(52);
+			font-weight: bold;
+			overflow: hidden;
+			max-width: rem(500);
+			max-height: rem(110);
+			margin-bottom: 0;
+			padding-bottom: rem(6);
+			cursor: default;
+
+			@include media-breakpoint-down(sm) {
+				height: auto;
+				max-height: rem(80);
+				font-size: rem(36);
+				line-height: rem(40);
+				max-width: 100%;
+				width: 100%;
+				
+			}
+
+			
+
+			i {
+				display: none;
+				color: #fff;
+				font-size: rem(24);
+				margin-left: rem(10);
+				position: relative;
+				top: rem(-3);
+
+
+				@include media-breakpoint-down(sm) {
+					font-size: rem(22);
+					top: rem(-1);
+					margin-left: rem(5);
+				}
+
+			}
+
+		}
+
+		textarea {
+			border: none;
+			font-family: Gilroy;
+			height: auto;
+			resize: none;
+			overflow: hidden;
+			background: #370042;
+			padding: rem(0) rem(16);
+			margin: 0 rem(-16);
+			height: rem(110);
+			overflow: hidden;
+			cursor: text;
+
+			@include media-breakpoint-down(sm) {
+				height: rem(80);
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			&.active {
+				display: block;
+
+				@include media-breakpoint-down(sm) {
+					margin: 0;
+				}
+			}
+
+		}
+	}
+
+	
+
+	&__action-btns {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+
+		@include media-breakpoint-down(sm) {
+			flex-flow: column-reverse;
+		}
+
+		&.inactive {
+			pointer-events: none;
+
+			.page-head__later-link {
+				color: #905092;
+			}
+
+
+		}
+		.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+			@include media-breakpoint-down(sm) {
+				justify-content: flex-start;
+			}
+		}
+
+	}
+
+	&__later-link {
+		color: #fff;
+		background: none;
+		margin-right: rem(24);
+		padding-left: 0;
+		padding-right: 0;
+		border: none;
+
+		@include media-breakpoint-down(sm) {
+			margin-top: rem(20);
+		}
+
+		&:hover {
+			background: none;
+			text-decoration: underline;
+			border: none;
+			color: #fff;
+
+		}
+	}
+
+}
+
+.page-head-orange {
+	background-color: $orange;
+}
+
+
+.title-label {
+	display: inline-block;
+	padding: rem(8) rem(25);
+	border: rem(1) solid #fff;	
+	border-radius: rem(20);
+	color: #fff;
+	margin: rem(12) 0;
+	font-weight: 600;
+	font-size: rem(13);
+
+}
+
+.cost {
+
+	@include media-breakpoint-down(sm) {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: rem(24);
+		width: 100%;
+	}
+
+	h6 {
+		color: #fff;
+		margin-bottom: rem(16);
+		font-weight: 500;	
+		line-height: rem(24);
+		@include media-breakpoint-down(sm) {
+			&:after {
+				content: " :";
+			}
+		}
+	}
+
+	p {
+		color: #FE5001;
+		font-size: rem(48);
+		line-height: 1;
+		font-weight: bold;	
+		margin-bottom: 0;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 36px;	
+			font-weight: bold;	
+			line-height: 40px;
+		}
+	}
+}
+

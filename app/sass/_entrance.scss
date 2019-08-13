@@ -1,0 +1,242 @@
+.entranse-header {
+
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  
+
+  .navbar-brand {
+    background: url("../img/icons/pr-punch-logo-orange.svg") no-repeat 50% / contain;
+
+    @include media-breakpoint-down(sm) {
+      background: url("../img/icons/pr-punch-mob-orange.svg") no-repeat 50% / contain;
+    }
+  }
+
+  .row {
+    & > div {
+      &:last-child {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .entranse-desc {
+    margin: 0 rem(20)
+  }
+
+ 
+
+}
+
+.entranse-desc {
+  color: $indigo;
+  font-size: rem(16);
+  font-weight: bold;
+
+  &:hover {
+    color: $indigo;
+  }
+
+  &--indent-right {
+    margin-right: rem(16);
+  }
+}
+
+
+
+.entranse {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transform: translate(-60%, 0);
+    background-color: $indigo;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+
+  .row {
+    position: relative;
+    display: flex;
+    height: 100%;
+  }
+
+  &__col {
+    min-height: 100vh;
+    padding-top: rem(162);
+
+    @include media-breakpoint-down(sm) {
+      width: 100% !important;
+      height: auto;
+    }
+
+    &:first-child {
+      padding-right: rem(70);
+      background-color: $indigo;
+      flex-shrink: 0;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+        
+      }
+    }
+
+    &:last-child {
+      background-color: #ffffff;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: rem(100);
+      }
+    }
+  }
+
+  h3 {
+    line-height: rem(40);
+    text-align: center;
+    color: #fe5001;
+  }
+
+  &__img {
+    max-width: rem(500);
+    width: 100%;
+    display: block;
+    margin: rem(50) auto;
+  }
+
+  .register-form {
+    flex-flow: column;
+    align-items: stretch;
+    margin-bottom: rem(60);
+
+    input {
+
+      width: 100%;
+      margin: 0;
+      margin-bottom: rem(23);
+      background-color: #fff;
+    }
+
+    &__label {
+      font-size: rem(13);
+      font-weight: 600;
+      line-height: 16px;
+      color: #bac3d1;
+      margin-bottom: 0;
+    }
+
+    &__link {
+      font-weight: 500;
+      color: $indigo;
+    }
+
+    button {
+      margin-top: rem(40);
+
+    }
+    .valid-feedback,
+    .invalid-feedback {
+      bottom: 0;
+      display: block !important;
+    }
+  }
+
+  &__bootom-links {
+    text-align: center;
+    padding: rem(25) 0;
+    margin-top: rem(10);
+
+  }
+
+  &__entranse-link {
+    color: $yellow;
+    font-weight: 600;
+  }
+
+
+}
+
+
+
+
+.entranse-form {
+	margin-left: rem(-20);
+  @include media-breakpoint-down(sm) {
+    padding: 0 rem(16);
+    margin-left: 0;
+  }
+
+  h6 {
+  	font-size: rem(16);
+  	text-align: center;
+  	line-height: rem(24);
+  	color: $blue;
+  	font-weight: 500;
+  	margin-bottom: rem(24);
+  }
+  
+
+  h3 {
+    margin-bottom: rem(33);
+    text-align: center;
+    color: $indigo;
+  }
+
+  .register-form {
+    padding: 0;
+  }
+
+  .form-group {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.entranse-mob-header {
+  margin: rem(20) 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  padding: 0 rem(16);
+  transform: translate(-50%, 0);
+}
+
+.backwards {
+  display: flex;
+  align-items: center;
+  color: $indigo;
+  font-weight: bold;
+  font-size: rem(20);
+
+  &:hover {
+    color: $indigo;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+
+  i {
+    color: $indigo;
+    margin-right: rem(15);
+    font-size: rem(24);
+  }
+}

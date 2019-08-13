@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>PR Punch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+
+	<nav class="navbar navbar-purple advertiser-navbar navbar-expand-md">
+		<div class="container">
+			<div class="navbar__left">
+				<a href="index.html" class="navbar-brand"></a>
+				<div class="user-info-mob">
+					<img src="../img/images/user-ico-3.svg" class="user-info-mob__photo" alt="">
+					<div class="user-info-mob__content">
+						<p class="user-info-mob__name">Катя Волошина</p>
+						<span class="user-info-mob__value">$3,500</span>
+					</div>
+				</div>
+			
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Назад к кампаниям</a>
+					</li>
+				</ul>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			    <a href="#" class="btn btn-primary menu-mob-btn">
+			    	<span>Menu</span>
+			    	<i class="zmdi zmdi-close"></i>
+			    </a>
+			  </button>
+			</div>
+	
+			<div class="navbar__right user-menu">
+				<div class="dropdown dropdown-info-balnce">
+				  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Баланс: $3500
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Пополнить баланс</a>
+				    <a class="dropdown-item" href="#">История транзакций</a>
+				  </div>
+				</div>
+				<div class="dropdown dropdown-info-user">
+				  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <img class="img-rounded" src="../img/images/user-ico.svg" alt="">
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Мой профиль</a>
+				    <a class="dropdown-item" href="#">Выйти</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="navbar__right  collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Кампании</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Отчеты</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Пополнить баланс</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">История транзакций</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Мой профиль</a>
+					</li>
+				</ul>
+				<a href="login.html" class="btn btn-primary head-btn-login">Выйти</a>
+
+			</div>
+		</div>
+	</nav>
+	<div class="page-head">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<span class="title-label">Новая</span>
+					<div class="page-head__title-wrap">
+				    <h2>Название промо кампании</h2>
+				  </div>
+
+				</div>
+				<div class="col-md-2">
+					<div class="cost">
+						<h6>Стоимость</h6>
+						<p>$2,120</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="page-head__action-btns inactive"> <!-- add .inactive -->
+						<a href="#" class="btn page-head__later-link">Закончить позже</a>
+						<div class="btn-group">
+						  <button type="button" class="btn btn-primary btn-disabled">Согласовать цены</button>
+						  <button type="button" class="btn btn-primary btn-disabled  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="sr-only">Toggle Dropdown</span>
+						  </button>
+						  <div class="dropdown-menu">
+						    <a class="btn btn-primary dropdown-item" href="#">Удалить кампанию</a>
+
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-main">
+		<div class="container">
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 1</span>
+						<h4>Статьи</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>Добавлены 2 статьи</p>
+					
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						<div class="mob-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Изменить</a>
+						</div>
+						<div class="desk-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Редактировать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 2</span>
+						<h4>Дополнительные услуги к статьям</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>$200</p>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						<p class="campaign-step__action-desc">Опционально</p>
+						<div class="mob-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Изменить</a>
+						</div>
+						<div class="desk-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Редактировать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 3</span>
+						<h4>Сайты для размещения</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>Выбраны 2 сайта</p>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						
+						<div class="mob-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Изменить</a>
+						</div>
+						<div class="desk-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Редактировать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 4</span>
+						<h4>Распределение статей по сайтам</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>$1920</p>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						
+						<div class="mob-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Изменить</a>
+						</div>
+						<div class="desk-visible">
+							<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Редактировать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 5</span>
+						<h4>Дополнительные услуги сайтов</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<div class="mob-visible">
+							<p>$0</p>
+						</div>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+
+					</div>
+				</div>
+			</div>
+			<div class="campaign-step-change">
+				<div class="desk-visible">
+					<table class="table setting-table">
+						<thead>
+							
+							<tr>
+								<th colspan="2">Услуги сайтов</th>
+							
+								<th>Название первой <br>статьи.doc</th>
+								<th>Название второй <br> статьи.doc</th>
+							</tr>
+							<tr>
+								<th colspan="4">Business Insider</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Анонс на главной</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-1" name="service-1">
+				
+										<label class="custom-control-label" for="service-1"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-6" name="service-6">
+				
+										<label class="custom-control-label" for="service-6"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Адаптация материала</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-2" name="service-2">
+				
+										<label class="custom-control-label" for="service-2"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-7" name="service-7">
+				
+										<label class="custom-control-label" for="service-7"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Анонс в слайдере</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-3" name="service-3">
+				
+										<label class="custom-control-label" for="service-3"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-8" name="service-8">
+				
+										<label class="custom-control-label" for="service-8"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Гарантирование</td>
+								<td>$90</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-4" name="service-4">
+				
+										<label class="custom-control-label" for="service-4"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-9" name="service-9">
+				
+										<label class="custom-control-label" for="service-9"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Расширенная аналитика 
+									<a href="#" class="tooltip-link" data-toggle="tooltip" data-placement="bottom" title="Коррекция под формат сайта">
+										<i class="zmdi zmdi-help-outline"></i>
+									</a>
+								</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-5" name="service-5">
+				
+										<label class="custom-control-label" for="service-5"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-10" name="service-10">
+				
+										<label class="custom-control-label" for="service-10"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+					
+						</tbody>
+					</table>
+					
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="4">BBC News</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Анонс на главной</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-11" name="service-11">
+				
+										<label class="custom-control-label" for="service-11"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-16" name="service-16">
+				
+										<label class="custom-control-label" for="service-16"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Адаптация материала</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-12" name="service-12">
+				
+										<label class="custom-control-label" for="service-12"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-17" name="service-17">
+				
+										<label class="custom-control-label" for="service-17"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Анонс в слайдере</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-13" name="service-13">
+				
+										<label class="custom-control-label" for="service-13"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-18" name="service-18">
+				
+										<label class="custom-control-label" for="service-18"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Гарантирование</td>
+								<td>$90</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-14" name="service-14">
+				
+										<label class="custom-control-label" for="service-14"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-19" name="service-19">
+				
+										<label class="custom-control-label" for="service-19"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Расширенная аналитика 
+									<a href="#" class="tooltip-link" data-toggle="tooltip" data-placement="bottom" title="Коррекция под формат сайта">
+										<i class="zmdi zmdi-help-outline"></i>
+									</a>
+								</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-15" name="service-5">
+				
+										<label class="custom-control-label" for="service-15"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-20" name="service-5">
+				
+										<label class="custom-control-label" for="service-20"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+					
+						</tbody>
+					</table>
+				</div>
+				<div class="mob-visible">
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="3">Название первой статьи.doc</th>
+							</tr>
+							<tr>
+								<th colspan="3">Business Insider</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Перевод текста </td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-21" name="service-1">
+				
+										<label class="custom-control-label" for="service-21"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Написание материала</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-22" name="service-2">
+				
+										<label class="custom-control-label" for="service-22"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Рерайт</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-23" name="service-3">
+				
+										<label class="custom-control-label" for="service-23"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+
+							</tr>
+							<tr>
+								<td>Гарантирование</td>
+								<td>$90</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-24" name="service-4">
+				
+										<label class="custom-control-label" for="service-24"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Редакторская обработка 
+									<a href="#" class="tooltip-link" data-toggle="tooltip" data-placement="bottom" title="Коррекция под формат сайта">
+										<i class="zmdi zmdi-help-outline"></i>
+									</a>
+								</td>
+								<td>$20</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-25" name="service-5">
+				
+										<label class="custom-control-label" for="service-25"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="3">BBC News</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Перевод текста </td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-26" name="service-6">
+				
+										<label class="custom-control-label" for="service-26"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Написание материала</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-27" name="service-7">
+				
+										<label class="custom-control-label" for="service-27"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Рерайт</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-28" name="service-8">
+				
+										<label class="custom-control-label" for="service-28"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+
+							</tr>
+							<tr>
+								<td>Гарантирование</td>
+								<td>$90</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-29" name="service-9">
+				
+										<label class="custom-control-label" for="service-29"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Редакторская обработка 
+									<a href="#" class="tooltip-link" data-toggle="tooltip" data-placement="bottom" title="Коррекция под формат сайта">
+										<i class="zmdi zmdi-help-outline"></i>
+									</a>
+								</td>
+								<td>$20</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-30" name="service-10">
+				
+										<label class="custom-control-label" for="service-30"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="3">Название второй статьи.doc</th>
+							</tr>
+							<tr>
+								<th colspan="3">Business Insider</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Перевод текста </td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-31" name="service-11">
+				
+										<label class="custom-control-label" for="service-31"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Написание материала</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-32" name="service-12">
+				
+										<label class="custom-control-label" for="service-32"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Рерайт</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-33" name="service-13">
+				
+										<label class="custom-control-label" for="service-33"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+
+							</tr>
+							<tr>
+								<td>Гарантирование</td>
+								<td>$90</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-34" name="service-14">
+				
+										<label class="custom-control-label" for="service-34"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Редакторская обработка 
+									<a href="#" class="tooltip-link" data-toggle="tooltip" data-placement="bottom" title="Коррекция под формат сайта">
+										<i class="zmdi zmdi-help-outline"></i>
+									</a>
+								</td>
+								<td>$20</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-35" name="service-15">
+				
+										<label class="custom-control-label" for="service-35"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="3">BBC News</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Перевод текста </td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-36" name="service-16">
+				
+										<label class="custom-control-label" for="service-36"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Написание материала</td>
+								<td>$100</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-37" name="service-17">
+				
+										<label class="custom-control-label" for="service-37"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Рерайт</td>
+								<td>$50</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-38" name="service-18">
+				
+										<label class="custom-control-label" for="service-38"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+
+							</tr>
+							<tr>
+								<td>Гарантирование</td>
+								<td>$90</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-39" name="service-19">
+				
+										<label class="custom-control-label" for="service-39"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Редакторская обработка 
+									<a href="#" class="tooltip-link" data-toggle="tooltip" data-placement="bottom" title="Коррекция под формат сайта">
+										<i class="zmdi zmdi-help-outline"></i>
+									</a>
+								</td>
+								<td>$20</td>
+								<td>
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="service-40" name="service-20">
+				
+										<label class="custom-control-label" for="service-40"><i class="custom-checkbox__check zmdi zmdi-check"></i></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+				</div>
+
+
+				<div class="campaign-step__btn-wrap">
+					<a href="adv-new-campaign-step05-completed.html" class=" campaign-step__action-link">Отмена</a>
+					<a href="adv-new-campaign-step05-completed.html" class="btn btn-primary">Сохранить</a>
+				</div>
+			</div>
+		
+
+
+
+
+		</div>
+
+	</div>
+
+	
+	
+
+
+
+
+	
+	<footer class="footer advertiser-footer">
+		<div class="container">
+			<div class="row footer__row">
+				<div class="col-md-6 footer__col">
+
+					<ul class="advertiser-footer__nav">
+						<li>
+							<a href="#">Правила сайта</a>
+						</li>
+						<li>
+							<a href="#">Конфиденциальность</a>
+						</li>
+						<li>
+							<a href="#">F.A.Q.</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 footer__col">
+					<div class="dropdown-cyan dropdown-cyan-light dropup">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Русский
+							<i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Русский</a>
+							<a class="dropdown-item" href="#">Английски</a>
+							<a class="dropdown-item" href="#">Украинский</a>
+						</div>
+					</div>
+					<div class="dropdown-cyan dropdown-cyan-light dropup">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							USD
+							<i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">RUB</a>
+							<a class="dropdown-item" href="#">USD</a>
+							<a class="dropdown-item" href="#">UAH</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

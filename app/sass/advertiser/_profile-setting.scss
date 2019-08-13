@@ -1,0 +1,114 @@
+.my-profile {
+	border-radius: 6px;
+	border: 1px solid #DAE0E6;
+
+	.row {
+		position: static;
+
+		& > div {
+			position: static;
+		}
+	}
+
+
+	&__item {
+		border-bottom: 1px solid  #DAE0E6;
+		padding: rem(20);
+		position: relative;
+
+		@include media-breakpoint-down(sm) {
+			padding: rem(15);
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&.inactive {
+			opacity: 0.4;
+		}
+
+		&.changeable {
+			.my-profile__btns-wrap {
+				position: static !important;
+			}
+			.btn {
+				width: auto;
+				padding: 0 rem(18);
+			}
+		}
+	}
+
+	.password-change {
+		margin-bottom: rem(18);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+	}
+
+	&__label {
+		padding-top: rem(10);
+		margin-bottom: rem(5);
+		white-space: nowrap;
+
+		@include media-breakpoint-down(sm) {
+			padding-top: 0;
+		}
+
+	}
+
+	.form-group {
+		margin-bottom: 0;
+
+		input {
+			max-width: rem(240);
+			@include media-breakpoint-down(sm) {
+				max-width: 100%;
+				width: 100%;
+			}
+
+			&[readonly] {
+				border: none;
+				background: none;
+				font-weight: bold;
+				padding-right: 0;
+				padding-left: 0;
+
+				@include media-breakpoint-down(sm) {
+					height: auto;
+					padding: 0;
+					max-width: none;
+					width: auto;
+				}
+
+			}
+		}
+	}
+
+	&__btns-wrap {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+
+		@include media-breakpoint-down(sm) {
+			position: absolute;
+			right: rem(15);
+			margin-top: rem(15);
+			top: rem(0);
+		}
+
+		.btn {
+			width: rem(124);
+			padding: 0;
+
+			@include media-breakpoint-down(sm) {
+				padding: 0 rem(12);
+				width: auto;
+			}
+		}
+
+		
+	}
+}

@@ -1,0 +1,106 @@
+.about {
+  position: relative;
+  margin-bottom: rem(65);
+  padding-top: rem(120);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: rem(82)
+  }
+
+  &:before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(750);
+    content: "";
+    background-color: $orange;
+
+    @include media-breakpoint-down(sm) {
+      height: rem(850);
+    }
+  }
+
+  &__head {
+    padding-top: rem(120);
+    padding-bottom: rem(180);
+    background-color: $orange;
+
+    @include media-breakpoint-down(md) {
+      padding-top: rem(82);
+      text-align: center;
+    }
+  }
+
+  
+
+  &__desc {
+    p {
+      font-size: rem(21);
+      font-weight: bold;
+      line-height: rem(28);
+      margin-bottom: rem(40);
+      letter-spacing: rem(.5);
+      color: $headings-color;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__head-img-wrap {
+    margin-bottom: rem(50);
+  }
+
+  &__text {
+    h4 {
+      line-height: rem(32);
+      margin-bottom: rem(16);
+    }
+
+    p {
+      margin-bottom: rem(24);
+    }
+  }
+}
+
+.about-head-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: rem(145);
+  background-color: $headings-color;
+
+  @include media-breakpoint-down(md) {
+    height: auto;
+    padding-bottom: rem(190);
+  }
+
+  &__title {
+    font-size: rem(72);
+    font-weight: bold;
+    line-height: rem(72);
+    position: relative;
+    z-index: 2;
+    padding: rem(48);
+    letter-spacing: rem(-1);
+    color: $orange;
+
+    @include media-breakpoint-down(md) {
+      padding: rem(30);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: rem(440);
+
+    @include media-breakpoint-down(md) {
+      right: rem(-70);
+      width: rem(380);
+    }
+  }
+}

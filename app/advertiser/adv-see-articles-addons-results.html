@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>PR Punch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+
+	<nav class="navbar navbar-purple advertiser-navbar navbar-expand-md">
+		<div class="container">
+			<div class="navbar__left">
+				<a href="index.html" class="navbar-brand"></a>
+				<div class="user-info-mob">
+					<img src="../img/images/user-ico-3.svg" class="user-info-mob__photo" alt="">
+					<div class="user-info-mob__content">
+						<p class="user-info-mob__name">Катя Волошина</p>
+						<span class="user-info-mob__value">$3,500</span>
+					</div>
+				</div>
+			
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Назад к кампаниям</a>
+					</li>
+				</ul>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			    <a href="#" class="btn btn-primary menu-mob-btn">
+			    	<span>Menu</span>
+			    	<i class="zmdi zmdi-close"></i>
+			    </a>
+			  </button>
+			</div>
+	
+			<div class="navbar__right user-menu">
+				<div class="dropdown dropdown-info-balnce">
+				  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Баланс: $3500
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Пополнить баланс</a>
+				    <a class="dropdown-item" href="#">История транзакций</a>
+				  </div>
+				</div>
+				<div class="dropdown dropdown-info-user">
+				  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <img class="img-rounded" src="../img/images/user-ico.svg" alt="">
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Мой профиль</a>
+				    <a class="dropdown-item" href="#">Выйти</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="navbar__right  collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Кампании</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Отчеты</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Пополнить баланс</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">История транзакций</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Мой профиль</a>
+					</li>
+				</ul>
+				<a href="login.html" class="btn btn-primary head-btn-login">Выйти</a>
+
+			</div>
+		</div>
+	</nav>
+	<div class="page-head">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<span class="title-label">Ожидает размещения</span>
+					<div class="page-head__title-wrap">
+				    <h2>Название промо кампании два</h2>
+
+				  </div>
+
+				</div>
+				<div class="col-md-2">
+					<div class="cost">
+						<h6>Стоимость</h6>
+						<p>$2,520</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-main">
+		<div class="container">
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 1</span>
+						<h4>Статьи</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>Добавлены 2 статьи</p>
+					
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Смотреть</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step done"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 2</span>
+						<h4>Дополнительные услуги к статьям</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<div class="mob-visible">
+							<p>$200</p>
+						</div>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step-change">
+				<div class="desk-visible">
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="2">Услуги</th>
+							
+								<th>Название первой <br>статьи.doc</th>
+								<th>Название второй <br> статьи.doc</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Перевод текста </td>
+								<td>$100</td>
+								<td>
+									<a href="see-articles-addons-preview.html" class="done-item"><i class="done-item__ico zmdi zmdi-check"></i>Смотреть</a>
+								</td>
+								<td>
+									<a href="see-articles-addons-preview.html" class="done-item"><i class="done-item__ico zmdi zmdi-check"></i>Смотреть</a>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="mob-visible">
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="3">Название первой статьи.doc</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Перевод текста </td>
+								<td>$100</td>
+								<td>
+									<a href="see-articles-addons-preview.html" class="done-item"><i class="done-item__ico zmdi zmdi-check"></i>Смотреть</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="table setting-table">
+						<thead>
+							<tr>
+								<th colspan="3">Название второй статьи.doc</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Перевод текста </td>
+								<td>$100</td>
+								<td>
+									<a href="see-articles-addons-preview.html" class="done-item"><i class="done-item__ico zmdi zmdi-check"></i>Смотреть</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="campaign-step__btn-wrap">
+					<a href="adv-new-campaign-step05-completed.html" class="btn btn-primary">Закрыть</a>
+				</div>
+
+
+			</div>
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 3</span>
+						<h4>Сайты для размещения</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>Выбраны 2 сайта</p>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						
+						<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Смотреть</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 4</span>
+						<h4>Распределение статей по сайтам</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>$1920</p>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						
+						<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Смотреть</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="campaign-step done inactive-step"> <!-- switch class "done", "inactive-step" -->
+			
+				<div class="row">
+					<div class="col-md-6 campaign-step__col-head">
+						<span class="campaign-step__check"><i class="zmdi zmdi-check-circle"></i></span>
+						<span class="campaign-step__step-num">Шаг 5</span>
+						<h4>Дополнительные услуги сайтов</h4>
+					</div>
+					<div class="col-md-2 campaign-step__price">
+						<p>$400</p>
+					</div>
+					<div class="col-md-4 campaign-step__action-col">
+						
+						<a href="adv-new-campaign-step01-upload.html" class="btn btn-secondary ">Смотреть</a>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+
+	</div>
+
+	
+	
+
+
+
+
+	
+	<footer class="footer advertiser-footer">
+		<div class="container">
+			<div class="row footer__row">
+				<div class="col-md-6 footer__col">
+
+					<ul class="advertiser-footer__nav">
+						<li>
+							<a href="#">Правила сайта</a>
+						</li>
+						<li>
+							<a href="#">Конфиденциальность</a>
+						</li>
+						<li>
+							<a href="#">F.A.Q.</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 footer__col">
+					<div class="dropdown-cyan dropdown-cyan-light dropup">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Русский
+							<i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Русский</a>
+							<a class="dropdown-item" href="#">Английски</a>
+							<a class="dropdown-item" href="#">Украинский</a>
+						</div>
+					</div>
+					<div class="dropdown-cyan dropdown-cyan-light dropup">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							USD
+							<i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">RUB</a>
+							<a class="dropdown-item" href="#">USD</a>
+							<a class="dropdown-item" href="#">UAH</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+
+</div>
+
+<div class="modal fade" id="caution-popup" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+    		<h4></h4>
+    	</div>
+      <div class="modal-body">
+        
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <a href="new-campaign-sent.html" class="btn btn-primary" data-dismiss="modal">Подтвердить</a>
+				<a href="#" class="btn btn-white" data-dismiss="modal">Отмена</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

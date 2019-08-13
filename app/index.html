@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>PR Punch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper no-padding">
+
+	<nav class="navbar homepage-navbar navbar-expand-md">
+		<div class="container">
+			<div class="navbar__left">
+				<a href="index.html" class="navbar-brand"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			    <a href="#" class="btn btn-primary menu-mob-btn">
+			    	<span>Menu</span>
+			    	<i class="zmdi zmdi-close"></i>
+			    </a>
+			  </button>
+			</div>
+
+			<div class="navbar__right collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="catalog.html">Каталог сайтов</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Блог</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">О проекте</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="signup.html">Регистрация</a>
+					</li>
+				</ul>
+				<a href="login.html" class="btn btn-primary head-btn-login">Войти</a>
+			</div>
+		</div>
+	</nav>
+
+
+	<section class="hp-hero-wrap">
+		<div class="carousel slide carousel-fade hp-hero-slider" data-ride="carousel" id="hp-hero-slider">
+			<ol class="carousel-indicators">
+				<li data-target="#hp-hero-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#hp-hero-slider" data-slide-to="1"></li>
+				<li data-target="#hp-hero-slider" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+
+
+				<div class="carousel-item active hp-hero orange">
+					<div class="container">
+						<a href="index.html" class="logo d-none d-md-flex">
+							<img src="img/icons/pr-punch-logo-purple.svg" alt="">
+						</a>
+						<a href="index.html" class="logo mob-logo d-sm-flex d-md-none"><img src="img/icons/pr-punch-mob-purple.svg" alt=""></a>
+
+						<div class="row">
+							<div class="col-md-6 hp-hero__left">
+								<h1>Договоримся и <br>разместим <br>статьи за вас</h1>
+								<a href="#" class="btn btn-primary btn-lg hp-hero-btn">Регистрация</a>
+							</div>
+							<div class="col-md-6 hp-hero__right">
+								<img class="hp-hero-img-02" src="img/images/carousel-02.jpg" alt="">
+							</div>
+						</div>
+						<a href="#how-work" class="scroll-next scroll-from"><i class="zmdi zmdi-long-arrow-down"></i></a>
+						
+						
+					</div>
+				</div>
+				<div class="carousel-item hp-hero cyan">
+					<div class="container">
+
+						<a href="index.html" class="logo d-none d-md-flex">
+							<img src="img/icons/pr-punch-logo-orange.svg" alt="">
+						</a>
+						<a href="index.html" class="logo mob-logo d-sm-flex d-md-none"><img src="img/icons/pr-punch-mob-orange.svg" alt=""></a>
+
+						<div class="row">
+							<div class="col-md-6 hp-hero__left">
+								<h1>Договоримся и <br>разместим <br>статьи за вас</h1>
+								<a href="#" class="btn btn-primary btn-lg hp-hero-btn">Регистрация</a>
+							</div>
+							<div class="col-md-6 hp-hero__right">
+								<img class="hp-hero-img-03" src="img/images/carousel-03.jpg" alt="">
+							</div>
+						</div>
+						<a href="#properties" class="scroll-next scroll-from"><i class="zmdi zmdi-long-arrow-down"></i></a>
+
+						
+					</div>
+				</div>
+				<div class="carousel-item hp-hero purple">
+					<div class="container">
+						<a href="index.html" class="logo d-none d-md-flex">
+							<img src="img/icons/pr-punch-logo-orange.svg" alt="">
+						</a>
+						<a href="index.html" class="logo mob-logo d-sm-flex d-md-none"><img src="img/icons/pr-punch-mob-orange.svg" alt=""></a>
+						<div class="row">
+							<div class="col-md-6 hp-hero__left">
+								<h1 class="tl-f1 hp-hero__title title-f1">Договоримся и <br>разместим <br>статьи за вас</h1>
+								<a href="#" class="btn btn-primary btn-lg hp-hero-btn">Регистрация</a>
+							</div>
+							<div class="col-md-6 hp-hero__right">
+								<img class="hp-hero-img-01" src="img/images/carousel-01.jpg" alt="">
+							</div>
+						</div>
+						<a href="#catalog" class="scroll-next scroll-from"><i class="zmdi zmdi-long-arrow-down"></i></a>
+			
+						
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+			
+		
+	</section>
+
+	<section class="how-work scroll-to" id="how-work">
+		<div class="container">
+			<div class="row section-head">
+				<div class="col-md-6">
+					<h3>Как это работает</h3>
+				</div>
+				<div class="col-md-6">
+					<p>Мы берем все вопросы оплаты на себя, а с клиентами работаем по удобной для них схеме. Все тарифы, указанные на нашем сайте, актуальны и регулярно обновляются.</p>
+				</div>
+			</div>
+			<div class="row how-work__row">
+				<div class="col-md-3">
+					<div class="do-step">
+						<div class="do-step__head">
+							<img src="img/icons/round-pen.svg" alt="">
+							<span>1</span>
+						</div>
+						<div class="do-step__content">
+							<h4>Регистрируетесь</h4>
+							<p>Публикуйте и распостраняйте статьи эффективно с PR Punch.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="do-step">
+						<div class="do-step__head">
+							<img src="img/icons/round-arrow.svg" alt="">
+							<span>2</span>
+						</div>
+						<div class="do-step__content">
+							<h4>Добавляете статьи</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="do-step">
+						<div class="do-step__head">
+							<img src="img/icons/round-share.svg" alt="">
+							<span>3</span>
+						</div>
+						<div class="do-step__content">
+							<h4>Выбираете сайты для  размещения</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="do-step">
+						<div class="do-step__head">
+							<img src="img/icons/round-people.svg" alt="">
+							<span>4</span>
+						</div>
+						<div class="do-step__content">
+							<h4>Рекламная кампания готова!</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" class="link-circle section__link-place">
+				<span class="link-circle__circle"></span> 
+				<span class="link-circle__content">Разместить статью</span>
+			</a>
+
+		</div>
+	</section>
+
+	<section class="properties" id="properties">
+		<div class="container">
+			<div class="row section-head">
+				<div class="col-md-6">
+					<h3>Доступ к сайтам по любым <br>тематикам</h3>
+				</div>
+				<div class="col-md-6">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				</div>
+			</div>
+			<div class="row properties__row">
+				<div class="col-md-6">
+	
+					<div class="row properties__property-row">
+						<div class="col-6 property">
+							<span>100+</span>
+							<p>Тематик</p>
+						</div>
+						<div class="col-6 property">
+							<span>54</span>
+							<p>Страны</p>
+						</div>
+						<div class="col-6 property">
+							<span>211000</span>
+							<p>Пользователей <span class="property__mark yellow"></span></p>
+						</div>
+						<div class="col-6 property">
+							<span>1345</span>
+							<p>Сайтов <span class="property__mark cyan"></span></p>
+						</div>
+					</div>
+		
+					<div class="desk-visible">
+						<a href="#" class="link-circle section__link-place ">
+							<span class="link-circle__circle"></span> 
+							<span class="link-circle__content">Посмотреть каталог</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="property-graph">
+						<canvas id="chart-1" class="chart-1" width="400" height="280"></canvas>
+						<div class="axes">
+							<span>Февраль</span>
+							<span>Март</span>
+							<span>Апрель</span>
+							<span>Май</span>
+							<span>Июнь</span>
+							<span>Июль</span>
+						</div>
+						<div class="property-indicators">
+							<p class="property-indicator property-indicator--1 yellow pg-f7"><span class="property-indicator__num">211000</span> <br>Пользователей</p>
+							<p class="property-indicator property-indicator--2 cyan pg-f7"><span class="property-indicator__num">1345</span> <br>Сайтов</p>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+			<div class="mob-visible">
+				<a href="#" class="link-circle section__link-place"><span class="link-circle__circle"></span> <span class="link-circle__content">Посмотреть каталог</span></a>
+
+
+			</div>
+		</div>
+	</section>
+	<section class="catalog desk-visible" id="catalog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/finance-cryptocurrency.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Финансы и <br>криптовалюты</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-2" src="img/icons/catalog-sites/website-logo/website-logo(1).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Sunday Post</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-3" src="img/icons/catalog-sites/website-logo/website-logo(2).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>BBС News</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img  class="catalog-site-img-2" src="img/icons/catalog-sites/website-logo/website-logo(1).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Sunday Post</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-3" src="img/icons/catalog-sites/website-logo/website-logo(2).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>BBС News</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/travel-services.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Туристические услуги, путешествия</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-4" src="img/icons/catalog-sites/website-logo/website-logo(3).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Unian</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-5" src="img/icons/catalog-sites/website-logo/website-logo(4).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Noviny.pl</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/auto-moto.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Авто и мото</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-2" src="img/icons/catalog-sites/website-logo/website-logo(1).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Sunday Post</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-3" src="img/icons/catalog-sites/website-logo/website-logo(2).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>BBС News</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/woman-family.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Женщина и семья</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-4" src="img/icons/catalog-sites/website-logo/website-logo(3).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Unian</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-5" src="img/icons/catalog-sites/website-logo/website-logo(4).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Noviny.pl</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="register-now">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<h3>Регистрируйтесь. Это легко!</h3>
+		
+					<form action="#" class="row register-form">
+						<div class="col-md-5 form-group">
+						  <input type="text" class="form-control form-control-secondary" placeholder="Your Name">
+				
+						</div>
+						<div class="col-md-5 form-group">
+							<input type="email" class="form-control form-control-secondary"  placeholder="Email">
+
+						</div>
+						<div class="col-md-2">
+							<button type="submit" class="btn btn-primary link-circle">
+				
+								<span class="link-circle__circle"></span>
+								<span class="link-circle__content">Регистрация</span>
+						
+							</button>
+						</div>
+				
+				
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<footer class="footer">
+
+		<div class="container">
+			<div class="row footer__top-row">
+				<div class="col-md-2 col-sm-12 col-6">
+					<a href="index.html" class="footer-logo"><img class="footer-logo__img" src="img/icons/pr-punch-footer-logo-purple.svg" alt=""></a>
+				</div>
+				<div class="col-md-8 col-sm-12 col-6">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 footer__nav">
+							<h6>Рекламодателям</h6>
+							<ul>
+								<li>
+									<a href="#">Каталог СМИ</a>
+								</li>
+								<li>
+									<a href="#">Блог</a>
+								</li>
+								<li>
+									<a href="#">Регистрация</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-4 footer__nav">
+							<h6>Компания</h6>
+						
+							<ul>
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Правила сайта</a>
+								</li>
+								<li>
+									<a href="#">Условия возврата</a>
+								</li>
+								<li>
+									<a href="#">Конфиденциальность</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-sm-4 footer__nav">
+							<h6>Вебмастерам</h6>
+						
+							<ul>
+								<li>
+									<a href="#">Возможности</a>
+								</li>
+								<li>
+									<a href="#">Регистрация</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="dropdown dropdown-cyan">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Русский
+							<i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Русский</a>
+							<a class="dropdown-item" href="#">Английски</a>
+							<a class="dropdown-item" href="#">Украинский</a>
+						</div>
+					</div>
+					<div class="dropdown dropdown-cyan">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							USD
+							<i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">RUB</a>
+							<a class="dropdown-item" href="#">USD</a>
+							<a class="dropdown-item" href="#">UAH</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer__bottom-row">
+				<div class="col-md-2 col-sm-4 col-6">
+					<ul class="socials-list">
+						<li class="socials-list__li">
+							<a href="#" class="socials-list__link"><i class="zmdi zmdi-linkedin"></i></a>
+						</li>
+						<li class="socials-list__li">
+							<a href="#" class="socials-list__link"><i class="zmdi zmdi-facebook"></i></a>
+						</li>
+						<li class="socials-list__li">
+							<a href="#" class="socials-list__link"><i class="zmdi zmdi-email"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-10 col-sm-8 col-6">
+					<div class="footer__desc">
+						<div class="d-none d-md-block">
+							<p>Все права защищены</p>
+						</div>
+						<div class="d-sm-block d-md-none">
+							<p>&copy; PR Punch 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="js/main.js"></script>
+
+<script src="js/chart-set-homepage.js"></script>
+</body>
+</html>

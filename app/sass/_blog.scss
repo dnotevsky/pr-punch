@@ -1,0 +1,177 @@
+.blogs-preview {
+	margin-bottom: rem(60);
+	padding-top: rem(120);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: rem(82)
+  }
+}
+
+.blog-preview {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 0;
+	margin: 0 auto;
+	max-width: rem(815);
+	align-items: flex-start;
+
+
+	&:hover {
+		text-decoration: none;
+
+		.blog-preview__read-btn {
+			text-decoration: none;
+			background-color: darken(#EEF2F6, 5%);
+		}
+
+		@include media-breakpoint-down(sm) {
+
+			.blog-preview__title {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	h4 {
+		@include media-breakpoint-down(sm) {
+			font-size: rem(18);
+			font-weight: bold;	
+			line-height: rem(24);
+		}
+	}
+
+
+	&__img {
+		display: block;
+		max-width: rem(136);
+		width: 100%;
+		flex-shrink: 0;
+		overflow: hidden;
+		align-items: flex-start;
+
+		@include media-breakpoint-down(sm) {
+			max-width: rem(72);
+		}
+
+	}
+
+	
+
+	&__content {
+		width: 100%;
+		padding: 0 rem(32);
+
+		@include media-breakpoint-down(sm) {
+			padding: 0 rem(16);
+			padding-right: 0;
+		}
+
+		time {
+			display: block;
+			font-size: rem(13);	
+			font-weight: 500;	
+			line-height: rem(16);
+			color: #8E99AD;
+			margin-bottom: rem(16);
+		}
+	}
+
+	.blog__title {
+		max-width: rem(445);
+
+		@include media-breakpoint-down(sm) {
+			font-size: rem(18);	
+			line-height: rem(24);
+		}
+	}
+
+	.btn {
+		margin-top: rem(40);
+
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+}
+
+.blog {
+	padding-top: rem(120);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: rem(82)
+  }
+
+
+	.row {
+		padding-top: 60px;
+		padding-bottom: rem(70);
+	}
+
+	time {
+		display: block;
+		text-align: center;
+		font-size: rem(13);	
+		font-weight: 500;	
+		line-height: rem(16);
+		color: #8E99AD;
+	}
+
+
+
+	&__head-img-wrap {
+		height: rem(410);
+		position: relative;
+		overflow: hidden;
+		margin-bottom: rem(40);
+
+		@include media-breakpoint-down(sm) {
+			height: rem(474);
+		}
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			min-height: 100%;
+			max-width: none;
+			width: auto;
+
+			@include media-breakpoint-down(sm) {
+				height: rem(474);
+			}
+		}
+	}
+
+
+	p {
+		margin: rem(16) 0;
+	}
+
+	h4 {
+		margin: rem(16) 0;
+	}
+
+
+
+	h2 {
+		text-align: center;
+		line-height: rem(52);
+		width: 100%;
+		margin: rem(20) auto;
+		margin-bottom: rem(60);
+
+		@include media-breakpoint-down(sm) {
+			font-size: rem(36);	
+			line-height: rem(40);
+			margin-bottom: rem(40);
+		}
+
+		br {
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+	}
+
+}

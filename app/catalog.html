@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>PR Punch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+	<nav class="navbar navbar-purple navbar-expand-md">
+		<div class="container">
+			<div class="navbar__left">
+				<a href="index.html" class="navbar-brand"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			    <a href="#" class="btn btn-primary menu-mob-btn">
+			    	<span>Menu</span>
+			    	<i class="zmdi zmdi-close"></i>
+			    </a>
+			  </button>
+			</div>
+
+			<div class="navbar__right collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="catalog.html">Каталог сайтов</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Блог</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">О проекте</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="signup.html">Регистрация</a>
+					</li>
+				</ul>
+				<a href="login.html" class="btn btn-primary head-btn-login">Войти</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="catalog-sites">
+		<div class="container">
+			<div class="page-title">
+				<h2>Каталог сайтов</h2>
+			</div>
+			<div class="catalog-filter">
+				<div>
+					<div class="form-group form-group-search">
+						<input type="text" class="form-control" placeholder="Поиск по названию">
+						<i class="zmdi zmdi-search"></i>
+					</div>
+					
+					
+					<div class="select-filter select-filter-wide">
+						
+						<div class="select-filter__input">
+							<p class="select-filter__input-text" default="Тематика">Тематика</p>
+							<i class="select-filter__input-ico zmdi zmdi-chevron-down"></i>
+						</div>
+					
+						<div class="select-filter__dropdown">
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-1" name="subject-1">
+					
+											<label class="custom-control-label" for="subject-1"><i class="custom-checkbox__check zmdi zmdi-check"></i>Авто и Мото</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-2" name="subject-2">
+					
+											<label class="custom-control-label" for="subject-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Архитектура</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-3" name="subject-3">
+					
+											<label class="custom-control-label" for="subject-3"><i class="custom-checkbox__check zmdi zmdi-check"></i> Банки и криптовалюты</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-4" name="subject-4">
+					
+											<label class="custom-control-label" for="subject-4"><i class="custom-checkbox__check zmdi zmdi-check"></i> Женщины и Семья</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-5" name="subject-5">
+					
+											<label class="custom-control-label" for="subject-5"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-6" name="subject-6">
+					
+											<label class="custom-control-label" for="subject-6"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-7" name="subject-7">
+					
+											<label class="custom-control-label" for="subject-7"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-8" name="subject-8">
+					
+											<label class="custom-control-label" for="subject-8"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-9" name="subject-9">
+					
+											<label class="custom-control-label" for="subject-9"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-10" name="subject-10">
+					
+											<label class="custom-control-label" for="subject-10"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-11" name="subject-11">
+					
+											<label class="custom-control-label" for="subject-11"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-12" name="subject-12">
+					
+											<label class="custom-control-label" for="subject-12"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="select-filter">
+						
+						<div class="select-filter__input">
+							<p class="select-filter__input-text" default="Регион">Регион</p>
+							<i class="select-filter__input-ico zmdi zmdi-chevron-down"></i>
+						</div>
+					
+						<div class="select-filter__dropdown">
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-1" name="region-1">
+					
+											<label class="custom-control-label" for="region-1"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-2" name="region-2">
+					
+											<label class="custom-control-label" for="region-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-3" name="region-3">
+					
+											<label class="custom-control-label" for="region-3"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-4" name="region-4">
+					
+											<label class="custom-control-label" for="region-4"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 4</label>
+										</div>
+									</li>
+					
+					
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="select-filter">
+						
+						<div class="select-filter__input">
+							<p class="select-filter__input-text" default="Страна">Страна</p>
+							<i class="select-filter__input-ico zmdi zmdi-chevron-down"></i>
+						</div>
+					
+						<div class="select-filter__dropdown">
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-1" name="country-1">
+					
+											<label class="custom-control-label" for="country-1"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-2" name="country-2">
+					
+											<label class="custom-control-label" for="country-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-3" name="country-3">
+					
+											<label class="custom-control-label" for="country-3"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-4" name="country-4">
+					
+											<label class="custom-control-label" for="country-4"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 4</label>
+										</div>
+									</li>
+					
+					
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="select-filter">
+						
+						<div class="select-filter__input">
+							<p class="select-filter__input-text" default="Язык">Язык</p>
+							<i class="select-filter__input-ico zmdi zmdi-chevron-down"></i>
+						</div>
+					
+						<div class="select-filter__dropdown">
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-1" name="language-1">
+					
+											<label class="custom-control-label" for="language-1"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-2" name="language-2">
+					
+											<label class="custom-control-label" for="language-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-3" name="language-3">
+					
+											<label class="custom-control-label" for="language-3"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-4" name="language-4">
+					
+											<label class="custom-control-label" for="language-4"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 4</label>
+										</div>
+									</li>
+					
+					
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="select-filter">
+						
+						<div class="select-filter__input">
+							<p class="select-filter__input-text" default="Тип">Тип</p>
+							<i class="select-filter__input-ico zmdi zmdi-chevron-down"></i>
+						</div>
+					
+						<div class="select-filter__dropdown">
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-1" name="type-1">
+					
+											<label class="custom-control-label" for="type-1"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-2" name="type-2">
+					
+											<label class="custom-control-label" for="type-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-3" name="type-3">
+					
+											<label class="custom-control-label" for="type-3"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-4" name="type-4">
+					
+											<label class="custom-control-label" for="type-4"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 4</label>
+										</div>
+									</li>
+				
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="select-filter select-filter-middle">
+						
+						<a href="#" class="select-filter__input open-filters-js">
+							<p class="select-filter__input-text">Все фильтры</p>
+							<i class="select-filter__input-ico zmdi zmdi-chevron-right"></i>
+						</a>
+					
+						
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="row section-head">
+				<div class="col-md-6">
+					<h3>В нашем каталоге более <br>1,345 сайтов</h3>
+				</div>
+				<div class="col-md-6">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/finance-cryptocurrency.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Финансы и <br>криптовалюты</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-2" src="img/icons/catalog-sites/website-logo/website-logo(1).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Sunday Post</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-3" src="img/icons/catalog-sites/website-logo/website-logo(2).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>BBС News</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img  class="catalog-site-img-2" src="img/icons/catalog-sites/website-logo/website-logo(1).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Sunday Post</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-3" src="img/icons/catalog-sites/website-logo/website-logo(2).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>BBС News</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/travel-services.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Туристические услуги, путешествия</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-4" src="img/icons/catalog-sites/website-logo/website-logo(3).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Unian</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-5" src="img/icons/catalog-sites/website-logo/website-logo(4).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Noviny.pl</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/auto-moto.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Авто и мото</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-2" src="img/icons/catalog-sites/website-logo/website-logo(1).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Sunday Post</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-3" src="img/icons/catalog-sites/website-logo/website-logo(2).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>BBС News</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 catalog__col">
+					<div class="catalog-topic">
+						<div class="catalog-topic__head">
+							<div class="catalog-topic__logo">
+								<img class="catalog-topic__logo-img" src="img/icons/catalog-sites/woman-family.svg" alt="">
+							</div>
+							<div class="catalog-topic__text">
+								<h3>Женщина и семья</h3>
+								<p>Более 2000 сайтов. <br>Стоимость размещения от $20</p>
+							</div>
+						</div>
+						<div class="catalog-topic__sites">
+							<div class="catalog-sites-slider">
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-1" src="img/icons/catalog-sites/website-logo/website-logo.png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Business Insider</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-4" src="img/icons/catalog-sites/website-logo/website-logo(3).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Unian</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+								<div class="slide">
+									<a href="#" class="catalog-site">
+										<div class="catalog-site__logo">
+											<img class="catalog-site-img-5" src="img/icons/catalog-sites/website-logo/website-logo(4).png" alt="">
+										</div>
+										<div class="catalog-site__footer">
+											<h4>Noviny.pl</h4>
+											<p>Просмотров 5800</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+
+
+
+	<nav class="page-nav" aria-label="Page navigation example">
+		<ul class="pagination justify-content-center">
+			<li class="page-item disabled">
+				<a class="btn btn-primary btn-ctrl" href="#" tabindex="-1" aria-disabled="true"><i class="arrow-ico zmdi zmdi-chevron-left"></i></a>
+			</li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link active" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item"><a class="page-link" href="#">5</a></li>
+			<li class="page-item"><a class="page-link" href="#">6</a></li>
+			<li class="page-item">
+				<a class="btn btn-primary btn-ctrl" href="#"><i class="arrow-ico zmdi zmdi-chevron-right"></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="register-now">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<h3>Регистрируйтесь. Это легко!</h3>
+		
+					<form action="#" class="row register-form">
+						<div class="col-md-5 form-group">
+							<input type="text" class="form-control form-control-secondary" placeholder="Your Name">
+				
+						</div>
+						<div class="col-md-5 form-group">
+							<input type="email" class="form-control form-control-secondary"  placeholder="Email">
+
+						</div>
+						<div class="col-md-2">
+							<button type="submit" class="btn btn-primary link-circle">
+				
+								<span class="link-circle__circle"></span>
+								<span class="link-circle__content">Регистрация</span>
+						
+							</button>
+						</div>
+				
+				
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<footer class="footer">
+
+		<div class="container">
+			<div class="row footer__top-row">
+				<div class="col-md-2 col-sm-12 col-6">
+					<a href="index.html" class="footer-logo"><img class="footer-logo__img" src="img/icons/pr-punch-footer-logo-purple.svg" alt=""></a>
+				</div>
+				<div class="col-md-8 col-sm-12 col-6">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 footer__nav">
+							<h6>Рекламодателям</h6>
+							<ul>
+								<li>
+									<a href="#">Каталог СМИ</a>
+								</li>
+								<li>
+									<a href="#">Блог</a>
+								</li>
+								<li>
+									<a href="#">Регистрация</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-4 footer__nav">
+							<h6>Компания</h6>
+						
+							<ul>
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Правила сайта</a>
+								</li>
+								<li>
+									<a href="#">Условия возврата</a>
+								</li>
+								<li>
+									<a href="#">Конфиденциальность</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-sm-4 footer__nav">
+							<h6>Вебмастерам</h6>
+						
+							<ul>
+								<li>
+									<a href="#">Возможности</a>
+								</li>
+								<li>
+									<a href="#">Регистрация</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="dropdown dropdown-cyan">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Русский
+							<i class="zmdi zmdi-chevron-down"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Русский</a>
+							<a class="dropdown-item" href="#">Английски</a>
+							<a class="dropdown-item" href="#">Украинский</a>
+						</div>
+					</div>
+					<div class="dropdown dropdown-cyan">
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							USD
+							<i class="zmdi zmdi-chevron-down"></i>
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">RUB</a>
+							<a class="dropdown-item" href="#">USD</a>
+							<a class="dropdown-item" href="#">UAH</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer__bottom-row">
+				<div class="col-md-2 col-sm-4 col-6">
+					<ul class="socials-list">
+						<li class="socials-list__li">
+							<a href="#" class="socials-list__link"><i class="zmdi zmdi-linkedin"></i></a>
+						</li>
+						<li class="socials-list__li">
+							<a href="#" class="socials-list__link"><i class="zmdi zmdi-facebook"></i></a>
+						</li>
+						<li class="socials-list__li">
+							<a href="#" class="socials-list__link"><i class="zmdi zmdi-email"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-10 col-sm-8 col-6">
+					<div class="footer__desc">
+						<div class="d-none d-md-block">
+							<p>Все права защищены</p>
+						</div>
+						<div class="d-sm-block d-md-none">
+							<p>&copy; PR Punch 2019</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+
+
+</div>
+
+<div class="all-filters">
+	<div class="container">
+		<div class="all-filters__head">
+			<a href="#" class="all-filters__close all-filters__left-link">
+				<i class="zmdi zmdi-close"></i>
+			</a>
+			<div class="all-filters__type">
+				<h5>Фильтр</h5>
+			</div>
+		</div>
+		<ul class="all-filters__list">
+			<li class="all-filters__li">
+				<div class="select-filter">
+							
+					<div class="select-filter__input">
+						<p class="select-filter__input-text" default="Тематика">Тематика</p>
+						<i class="select-filter__input-ico zmdi zmdi-chevron-right"></i>
+					</div>
+				
+					<div class="select-filter__dropdown">
+						<div class="container">
+							<div class="all-filters__head">
+								<a href="#" class="all-filters__left-link close-dropdown">
+									<i class="zmdi zmdi-arrow-left"></i>
+								</a>
+								<div class="all-filters__type">
+									<h5>Тематика</h5>
+								</div>
+							</div>
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-1-2" name="subject-1">
+											
+											<label class="custom-control-label" for="subject-1-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Авто и Мото</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-2-2" name="subject-2">
+											
+											<label class="custom-control-label" for="subject-2-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Архитектура</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-3-2" name="subject-3">
+											
+											<label class="custom-control-label" for="subject-3-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Банки и криптовалюты</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-4-2" name="subject-4">
+											
+											<label class="custom-control-label" for="subject-4-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Женщины и Семья</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-5-2" name="subject-5">
+											
+											<label class="custom-control-label" for="subject-5-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-6-2" name="subject-6">
+											
+											<label class="custom-control-label" for="subject-6-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-7-2" name="subject-7">
+											
+											<label class="custom-control-label" for="subject-7-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-8-2" name="subject-8">
+											
+											<label class="custom-control-label" for="subject-8-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-9-2" name="subject-9">
+											
+											<label class="custom-control-label" for="subject-9-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-10-2" name="subject-10">
+											
+											<label class="custom-control-label" for="subject-1-20"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-11-2" name="subject-11">
+											
+											<label class="custom-control-label" for="subject-11-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="subject-12-2" name="subject-12">
+											
+											<label class="custom-control-label" for="subject-12-2"><i class="custom-checkbox__check zmdi zmdi-check"></i> Тематика</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="all-filters__li">
+				<div class="select-filter">
+						
+					<div class="select-filter__input">
+						<p class="select-filter__input-text" default="Регион">Регион</p>
+						<i class="select-filter__input-ico zmdi zmdi-chevron-right"></i>
+					</div>
+				
+					<div class="select-filter__dropdown">
+						<div class="container">
+							<div class="all-filters__head">
+								<a href="#" class="all-filters__left-link close-dropdown">
+									<i class="zmdi zmdi-arrow-left"></i>
+								</a>
+								<div class="all-filters__type">
+									<h5>Регион</h5>
+								</div>
+							</div>
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-1-2" name="region-1">
+											
+											<label class="custom-control-label" for="region-1-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-2-2" name="region-2">
+											
+											<label class="custom-control-label" for="region-2-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-3-2" name="region-3">
+											
+											<label class="custom-control-label" for="region-3-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="region-4-2" name="region-4">
+											
+											<label class="custom-control-label" for="region-4-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Регион 4</label>
+										</div>
+									</li>
+											
+											
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="all-filters__li">
+				<div class="select-filter">
+						
+					<div class="select-filter__input">
+						<p class="select-filter__input-text" default="Страна">Страна</p>
+						<i class="select-filter__input-ico zmdi zmdi-chevron-right"></i>
+					</div>
+				
+					<div class="select-filter__dropdown">
+						<div class="container">
+							<div class="all-filters__head">
+								<a href="#" class="all-filters__left-link close-dropdown">
+									<i class="zmdi zmdi-arrow-left"></i>
+								</a>
+								<div class="all-filters__type">
+									<h5>Страна</h5>
+								</div>
+							</div>
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-1-2" name="country-1">
+											
+											<label class="custom-control-label" for="country-1-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-2-2" name="country-2">
+											
+											<label class="custom-control-label" for="country-2-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-3-2" name="country-3">
+											
+											<label class="custom-control-label" for="country-3-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="country-4-2" name="country-4">
+											
+											<label class="custom-control-label" for="country-4-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Страна 4</label>
+										</div>
+									</li>
+											
+											
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="all-filters__li">
+				<div class="select-filter">
+						
+					<div class="select-filter__input">
+						<p class="select-filter__input-text" default="Язык">Язык</p>
+						<i class="select-filter__input-ico zmdi zmdi-chevron-right"></i>
+					</div>
+				
+					<div class="select-filter__dropdown">
+						<div class="container">
+							<div class="all-filters__head">
+								<a href="#" class="all-filters__left-link close-dropdown">
+									<i class="zmdi zmdi-arrow-left"></i>
+								</a>
+								<div class="all-filters__type">
+									<h5>Язык</h5>
+								</div>
+							</div>
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-1-2" name="language-1">
+											
+											<label class="custom-control-label" for="language-1-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-2-2" name="language-2">
+											
+											<label class="custom-control-label" for="language-2-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-3-2" name="language-3">
+											
+											<label class="custom-control-label" for="language-3-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="language-4-2" name="language-4">
+											
+											<label class="custom-control-label" for="language-4-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Язык 4</label>
+										</div>
+									</li>
+											
+											
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="all-filters__li">
+				<div class="select-filter">
+						
+					<div class="select-filter__input">
+						<p class="select-filter__input-text" default="Тип">Тип</p>
+						<i class="select-filter__input-ico zmdi zmdi-chevron-right"></i>
+					</div>
+				
+					<div class="select-filter__dropdown">
+						<div class="container">
+							<div class="all-filters__head">
+								<a href="#" class="all-filters__left-link close-dropdown">
+									<i class="zmdi zmdi-arrow-left"></i>
+								</a>
+								<div class="all-filters__type">
+									<h5>Тип</h5>
+								</div>
+							</div>
+							<div class="select-filter__list-wrap" data-simplebar data-simplebar-auto-hide="false">
+								<ul class="select-filter__list">
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-1-2" name="type-1">
+											
+											<label class="custom-control-label" for="type-1-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 1</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-2-2" name="type-2">
+											
+											<label class="custom-control-label" for="type-2-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 2</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-3-2" name="type-3">
+											
+											<label class="custom-control-label" for="type-3-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 3</label>
+										</div>
+									</li>
+									<li class="select-filter__li">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type-4-2" name="type-4">
+											
+											<label class="custom-control-label" for="type-4-2"><i class="custom-checkbox__check zmdi zmdi-check"></i>Тип 4</label>
+										</div>
+									</li>
+										
+								</ul>
+							</div>
+							<div class="select-filter__action">
+								<a href="#" class="btn select-filter__btn-link reset">Сброс</a>
+								<div class="btn btn-primary save">Применить</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="all-filters__li">
+				<div class="select-filter">
+					<a href="#" class="select-filter__input open-filters-js">
+						<p class="select-filter__input-text">Домашняя страница</p>
+						<i class="select-filter__input-ico zmdi zmdi-chevron-right"></i>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+<script src="js/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

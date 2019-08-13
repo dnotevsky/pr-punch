@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PR Punch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-purple advertiser-navbar payment-navbar navbar-expand-md">
+        <div class="container">
+          <div class="navbar__left">
+            <a href="index.html" class="navbar-brand"></a>
+          </div>
+
+          <div class="navbar__right">
+            <a href="#" class="btn payment-cancel">Отмена</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="page-main payment">
+        <div class="container">
+          <h4>Оплата рекламной кампании</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="row payment-revers">
+                <div class="col-md-7">
+                  <div class="payment-window">
+                    <div class="payment-window-head">
+                      <a href="#">
+                        <i class="zmdi zmdi-arrow-left"></i>
+                        <h6>Оплата частями с личного счета и карты</h6>
+                      </a>
+                    </div>
+                    <div class="payment-window-body">
+                      <div class="row">
+                        <div class="col-12 payment-window-body__top"><h6>Шаг 1: Оплата с личного счета</h6></div>
+                        <div class="col-md-4 payment-window-col">
+                          <h6>Ваш баланс:</h6>
+                          <p>$2,500</p>
+                        </div>
+                        <div class="col-md-6 offset-md-2">
+                          <h6>Списать с баланса:</h6>
+                          <div class="form-group payment-window__form-group">
+                            <input type="text" class="form-control" placeholder="0" value="0">
+                            <span>USD</span>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <a href="#" class="btn btn-primary payment-window__balance-btn">Успешно оплачено!</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- inactive -->
+                    <div class="payment-window-body">
+                      <div class="row">
+                        <div class="col-12 payment-window-body__top"><h6>Шаг 2: Остаток к оплате с карты</h6></div>
+                        <div class="col-md-5">
+                          <h6>Выберите валюту:</h6>
+                          <select class="selectpicker">
+                            <option>USD</option>
+                            <option>RUB</option>
+                            <option>UAH</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6 offset-md-1 payment-window-col">
+                          <h6>Итого:</h6>
+                          <p>$1,520 <span>+ комиссия 10% = $152</span></p>
+                        </div>
+                        <div class="col-12">
+                          <a href="#" class="btn btn-primary payment-window__balance-btn">Оплатить $1,672</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="payment-total">
+                    <div class="payment-total-top">
+                      <h6>
+                        Название промо кампании
+                      </h6>
+                    </div>
+                    <div class="payment-total-divider"></div>
+                    <div class="payment-total-bottom">
+                      <h6>К оплате:</h6>
+                      <p>
+                        $1,520
+                      </p>
+                    </div>
+                    <div class="payment-total-angles"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer advertiser-footer">
+        <div class="container">
+          <div class="row footer__row">
+            <div class="col-md-6 footer__col">
+              <ul class="advertiser-footer__nav">
+                <li>
+                  <a href="#">Правила сайта</a>
+                </li>
+                <li>
+                  <a href="#">Конфиденциальность</a>
+                </li>
+                <li>
+                  <a href="#">F.A.Q.</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 footer__col">
+              <div class="dropdown-cyan dropdown-cyan-light dropup">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Русский
+                  <i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Русский</a>
+                  <a class="dropdown-item" href="#">Английски</a>
+                  <a class="dropdown-item" href="#">Украинский</a>
+                </div>
+              </div>
+              <div class="dropdown-cyan dropdown-cyan-light dropup">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  USD
+                  <i class="zmdi zmdi-chevron-down dropdown__input-ico"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">RUB</a>
+                  <a class="dropdown-item" href="#">USD</a>
+                  <a class="dropdown-item" href="#">UAH</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
